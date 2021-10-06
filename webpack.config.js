@@ -10,6 +10,7 @@ module.exports = {
                 test: /\.html$/i,
                 loader: 'html-loader',
                 options: {
+                    minimize: false,
                     sources: false,
                 },
             }
