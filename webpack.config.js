@@ -1,9 +1,14 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebPack = require('html-webpack-plugin');
  
  
 module.exports = {
  
     mode: 'development',
+
+    output: {
+        clean: true,
+    },
+
     module: {
         rules: [
             {
@@ -16,11 +21,23 @@ module.exports = {
             }
         ]
     },
+
+    optimization:{},
+
     plugins: [
-        new HtmlWebPackPlugin({
+
+        new HtmlWebPack({
+            title: 'Mi Webpack App',
+            filename: 'index.html',
             template: './src/index.html',
-            filename: './index.html'
         }),
+        
+        // new HtmlWebPackPlugin({
+        //     title: 'Mi webpack App',
+        //     template: './src/index.html',
+        //     filename: './index.html'
+        // }),
+        
     ]
  
  
