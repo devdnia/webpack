@@ -8,7 +8,7 @@ Recuerda construir los módulos de Node
 ```
 npm install
 ```
-y contruir el build para crear el directorio /dist:
+y construir el build para crear el directorio /dist:
 ```
 npm run build
 ```
